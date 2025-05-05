@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Laptop Specs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Function to toggle visibility of the details
+    function toggleDetails() {
+      const details = document.getElementById('specifications');
+      const button = document.getElementById('details-button');
+      if (details.classList.contains('hidden')) {
+        details.classList.remove('hidden');
+        button.textContent = "Show Less";
+      } else {
+        details.classList.add('hidden');
+        button.textContent = "More Details";
+      }
+    }
+  </script>  
+  <style>
+    /* Banner Image Style */
+    img {
+      width: 20%; /* Adjust the percentage for better scaling on mobile */
+      max-width: 100px; /* Prevents the image from getting too large */
+      height: auto; /* Maintains aspect ratio */
+      display: block;
+      margin: 0 auto; /* Centers the image */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 p-6">
+
+  <img src="./assets/Panner.png" alt="">
+  
+  <!-- More Details Button -->
+  <div class="mt-6 text-center">
+    <button id="details-button" onclick="toggleDetails()" class="px-6 py-2 bg-blue-500 text-white rounded-md">More Details</button>
+  </div>
+
+  <!-- Specifications Section (Initially Hidden) -->
+  <div id="specifications" class="hidden mt-6 max-w-4xl mx-auto bg-white p-6 rounded-2xl shadow-lg">
+    <h2 class="text-3xl font-bold mb-4">Laptop Specifications</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Processor Section -->
+      <div class="bg-white rounded-2xl shadow p-4">
+        <h3 class="text-xl font-semibold mb-2">Processor</h3>
+        <ul class="space-y-1">
+          <li><strong>Processor:</strong> AMD A6</li>
+          <li><strong>Clock Speed:</strong> 2.6 GHz</li>
+          <li><strong>Number of Cores:</strong> Dual-core</li>
+          <li><strong>Processor Make:</strong> AMD</li>
+          <li><strong>Graphics Processor:</strong> Integrated AMD Radeon</li>
+        </ul>
+      </div>
+
+      <!-- Memory Section -->
+      <div class="bg-white rounded-2xl shadow p-4">
+        <h3 class="text-xl font-semibold mb-2">Memory</h3>
+        <ul class="space-y-1">
+          <li><strong>Capacity:</strong> 4 GB</li>
+          <li><strong>RAM Type:</strong> DDR4</li>
+          <li><strong>Memory Slots:</strong> 2</li>
+          <li><strong>Expandable Memory:</strong> Yes, up to 16 GB</li>
+        </ul>
+      </div>
+
+      <!-- Storage Section (Added SSD and External Hard Disk) -->
+      <div class="bg-white rounded-2xl shadow p-4">
+        <h3 class="text-xl font-semibold mb-2">Storage</h3>
+        <ul class="space-y-1">
+          <li><strong>SSD:</strong> 240 GB</li>
+          <li><strong>External Hard Disk:</strong> 500 GB</li>
+        </ul>
+      </div>
+
+      <!-- Connectivity Section -->
+      <div class="bg-white rounded-2xl shadow p-4">
+        <h3 class="text-xl font-semibold mb-2">Connectivity</h3>
+        <ul class="space-y-1">
+          <li><strong>Wireless LAN:</strong> Yes</li>
+          <li><strong>Wi-Fi Version:</strong> 802.11 ac</li>
+          <li><strong>Bluetooth:</strong> Yes</li>
+          <li><strong>Bluetooth Version:</strong> Not specified</li>
+        </ul>
+      </div>
+
+      <!-- Ports Section -->
+      <div class="bg-white rounded-2xl shadow p-4">
+        <h3 class="text-xl font-semibold mb-2">Ports</h3>
+        <ul class="space-y-1">
+          <li><strong>USB 3.0 Slots:</strong> Yes</li>
+          <li><strong>Thunderbolt Port:</strong> No</li>
+          <li><strong>SD Card Reader:</strong> Yes</li>
+          <li><strong>Ethernet Port:</strong> Yes</li>
+          <li><strong>Headphone Jack:</strong> Yes</li>
+          <li><strong>Microphone Jack:</strong> Yes</li>
+          <li><strong>VGA Port:</strong> No</li>
+        </ul>
+      </div>
+
+      <!-- Display Section -->
+      <div class="bg-white rounded-2xl shadow p-4">
+        <h3 class="text-xl font-semibold mb-2">Display</h3>
+        <ul class="space-y-1">
+          <li><strong>Size:</strong> 14-inch</li>
+          <li><strong>Resolution:</strong> 1366 x 768 pixels</li>
+          <li><strong>Pixel Density:</strong> 112 ppi</li>
+          <li><strong>Features:</strong> Anti-glare</li>
+          <li><strong>Touchscreen:</strong> No</li>
+        </ul>
+      </div>
+
+      <!-- Physical Specs Section -->
+      <div class="bg-white rounded-2xl shadow p-4">
+        <h3 class="text-xl font-semibold mb-2">Physical & OS</h3>
+        <ul class="space-y-1">
+          <li><strong>Release Date:</strong> January 2022</li>
+          <li><strong>Launched in India:</strong> Yes</li>
+          <li><strong>Thickness:</strong> 20 mm</li>
+          <li><strong>Dimensions:</strong> 340 x 240 x 20 mm</li>
+          <li><strong>Weight:</strong> 1.5 kg</li>
+          <li><strong>Colours:</strong> Black</li>
+          <li><strong>Operating System:</strong> Windows 10</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="mt-12 max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+    <p class="text-lg">Feel free to reach out to me for any questions or inquiries:</p>
+   
+    <p class="mt-2 text-lg">
+      <strong>Phone:</strong> +91 8072818585
+    </p>
+    <p class="mt-4 text-lg">
+      <strong>Email:</strong> <a href="mailto:balasubramaniyanece@outlook.com" class="text-blue-500">balasubramaniyanece@outlook.com</a>
+    </p>
+  </div>
+
+</body>
+</html>
